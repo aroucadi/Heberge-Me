@@ -1,0 +1,11 @@
+version: '2'
+services:
+    hebergeme-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/HebergeMe/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=HebergeMe
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
